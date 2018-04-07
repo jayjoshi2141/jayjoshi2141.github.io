@@ -1,0 +1,302 @@
+@media only screen and (max-width: 1170px)
+{
+    .wrapper    { width: 980px; }
+    .fly-in-text    
+    { 
+        -o-transform: translateX(0px) translateY(110px);
+        -moz-transform: translateX(0px) translateY(110px);
+        -webkit-transform: translateX(0px) translateY(110px);
+        transform: translateX(0px) translateY(110px);
+    }
+    .heroBanner .birdsCloud { top: -140px; left: 10px; }
+    .heroBanner .birds_right    { right: -15px; top: -51%; left: auto;}
+    .heroBanner .inventiveImg   { top: -50px; }
+    .heroBanner .inventiveImg .heroText img { max-width: 122px; }
+    .intro .introImage span { left: 23px; top: 11px; }
+    
+    h3  { width: 25%; padding: 0px; }
+    .services .servicesInfo { padding: 20px 0px 0px; }
+    .skills h3  { width: 16%; padding: 5px 0px 17px; }
+    .skills .skillsInfo ul li   { padding: 25px 5px; }
+    .skills .skillsInfo ul li:nth-child(even)   { padding: 25px 3% 25px 25px; }
+    .education  { padding: 5% 0px; }
+    .education h3   { padding-bottom: 17px; }
+    .education .indication:before   { top: 5px; }
+    .education .leftInfo    { padding: 0px 3% 0px 2%; }
+    .education .rightInfo   { padding: 5% 2% 0px 3%; }
+    .education .leftInfo .box3         { right: -40px !important; left: auto !important } 
+    .education .rightInfo .bulleted    { left: -40px !important; bottom: -13px; }
+    .experience .studyBox   { width: 46%; }
+    .studyBox h4:before { left: 23px; }
+    .footerMain { background-size: 108% 100%;  }
+    .footerInfo { width: 69%; padding-left: 20px; }
+    .footerMain .myImage  { width: 31%; }
+    footer .active .myImage
+    {
+        -o-transform: translate3d(20%, 5px, 0px);
+        -moz-transform: translate3d(20%, 5px, 0px);
+        -webkit-transform: translate3d(20%, 5px, 0px);
+        transform: translate3d(20%, 5px, 0px); 
+    }
+    .footerMain .myImage img    { max-width: 123%; }
+    .footerInfo .getInTouch .email  { padding: 10px 10px 10px 47px; }
+    .footerInfo .getInTouch a span  { left: 1px; }
+    .footerInfo .getInTouch .contact    { padding: 10px 20px 10px 40px; }
+    .footerInfo .getInTouch .myLocation { padding: 10px 30px 10px 50px; }
+    .footerInfo .getInTouch .myLocation span    { left: 12px; }
+    .footerInfo .getInTouch a   { margin-right: 15px; }
+    
+}
+
+@media only screen and (max-width: 980px)
+{
+    .wrapper  { width: 768px; }
+    body    { overflow-x: hidden; }
+    .heroBanner { height: 500px; }
+    .heroBanner .birds_right    { top: -90%; right: 0px; }
+    .heroBanner .inventiveImg .heroText img     { max-width: 95px; }    
+    .heroBanner .inventiveImg .heroText img:first-child  { max-width: 35px; }
+    .heroBanner .inventiveImg .heroText .v   { max-width: 84px; } 
+    .heroBanner .inventiveImg .heroText .e   { max-width: 84px; } 
+    .heroBanner .inventiveImg .heroText .n2  { max-width: 86px; } 
+    .heroBanner .inventiveImg .heroText .t   { max-width: 65px; } 
+    .heroBanner .inventiveImg .heroText .i2  { max-width: 48px; } 
+    .heroBanner .inventiveImg .heroText .v2  { max-width: 77px; } 
+    .intro .introImage  { width: 43%; }
+    .intro .introImage span { left: 20px; }
+    .intro .introInfo   { width: 57%; padding-left: 30px; }
+    .intro .introInfo p { width: 100%; }
+    h3  { width: 28% !important; }
+    .services .servicesInfo ul li   { width: 48%; padding: 15px 0px 20px; }
+    .services .servicesInfo ul li .serviceDetail p  { padding: 0px 30px; }
+    .education .rightInfo .bulleted { bottom: -50px; }
+    .skills { background-size: 100% 100%; margin: 45px 0px 10px; }
+    .skills .skillsInfo { width: 95%; padding: 30px 0px; }
+    .skills .skillsInfo ul li   { width: 100%; padding: 21px 40px 21px 30px !important; }
+    .skills .skillsInfo ul li label 
+    { 
+        padding: 1px 5px 0px 0px; 
+        width: 20% !important;
+        text-align: left;
+    }
+    .skills .skillsInfo ul li .progressBar  { width: 80% !important; }    
+    .portfolio .thumbs  { padding: 0px 5px; }
+    .portfolio ul   
+    {
+        -moz-column-width: 17em;
+        -webkit-column-width: 17em;
+    }
+    .portfolio ul li.gallery2 a { height: 383px; }
+    .portfolio ul li.gallery4 a { height: 184px; }
+    .education h3   { width: 31% !important; }
+    .education .leftInfo    { padding: 0px 3% 0px 10px; }
+    .education .rightInfo   { padding: 0px 10px 0px 22px; }
+    .studyBox h4:before    { left: 11px; }
+    .studyBox   { padding: 30px 5px 33px 19%; }
+    .education .indication    { width: 23px; height: 20px; }
+    .education .leftInfo .indication  { top: 41px; right: -10px; }
+    .education .rightInfo .indication { left: -9px; } 
+    .education .indication:before  { top: 2px; left: 6px; }
+    .education .rightInfo .indication:before  { left: 8px; top: 2px; }
+    .education .rightInfo .bulleted { left: -33px !important; }
+    .education .leftInfo .box3  { right: -34px !important; }
+    .experience h3  { width: 35% !important; }
+    .experience .studyBox   { width: 50%; }
+    .interest ul li { margin: 0px 2px; }
+    .footerMain { height: 365px; }
+    .footerMain .myImage    { display: none; }
+    .footerInfo 
+    {  
+        width: 100%; 
+        padding: 45px 0px 0px 0px; 
+        text-align: center; 
+        
+        -o-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .footerInfo p   { padding: 0px 9% 30px; }
+    .footerInfo .getInTouch a   
+    { 
+        -o-box-shadow: inset 0 0 0.66666675em rgba(18, 107, 201, 0.7); 
+        -moz-box-shadow: inset 0 0 0.66666675em rgba(18, 107, 201, 0.7); 
+        -webkit-box-shadow: inset 0 0 0.66666675em rgba(18, 107, 201, 0.7); 
+        box-shadow: inset 0 0 0.66666675em rgba(18, 107, 201, 0.7); 
+        
+        -o-border-radius: 45px;
+        -moz-border-radius: 45px;
+        -webkit-border-radius: 45px;
+        border-radius: 45px;
+    }
+    .footerInfo .getInTouch a:hover     
+    { 
+        box-shadow: inset 0 0 0.66666675em rgba(18, 107, 201, 0.8); 
+        -o-border-radius: 45px;
+        -moz-border-radius: 45px;
+        -webkit-border-radius: 45px;
+        border-radius: 45px;
+    }
+    .footerInfo .getInTouch a:before    { display: none; }
+    .footerInfo .socialMedia    { padding-top: 40px; }
+    .footerInfo .socialMedia label  { display: block; padding: 0px 12px 10px 0px; }
+    
+}
+
+@media only screen and (max-width: 767px)
+{   
+    .wrapper    { width: 100%; }
+    .fly-in-text li { font-size: 19px; }
+    .fly-in-text    
+    {
+        -o-transform: translateX(0px) translateY(161px);
+        -moz-transform: translateX(0px) translateY(161px);
+        -webkit-transform: translateX(0px) translateY(161px);
+        transform: translateX(0px) translateY(161px);
+    }
+    .heroBanner { height: 520px; }
+    .heroBanner .birdsCloud { top: -123px; left: 5px; }
+    .heroBanner .birdsCloud img { max-width: 75%; }
+    .heroBanner .birds_right    { left: auto; right: -63px; top: -109px; }
+    .heroBanner .birds_right img    { max-width: 63%; }
+    .heroBanner .inventiveImg   { top: -20px; }
+    .heroBanner .inventiveImg .heroText img:first-child { max-width: 18px !important; }
+    .heroBanner .inventiveImg .heroText img { max-width: 40px !important; }
+    .heroBanner .inventiveImg .heroText .n  { max-width: 44px !important; }
+    .heroBanner .inventiveImg .heroText .e  { max-width: 40px !important; }
+    .heroBanner .inventiveImg .heroText .n2 { max-width: 40px !important; }
+    .heroBanner .inventiveImg .heroText .e2 { max-width: 43px !important; }
+    .heroBanner .inventiveImg .heroText .v   { max-width: 40px !important; }
+    .heroBanner .inventiveImg .heroText .t   { max-width: 30px !important; }
+    .heroBanner .inventiveImg .heroText .i2  { max-width: 24px !important; }
+    .heroBanner .inventive .inventiveImg .heroText .v2  { max-width: 39px !important; }
+    
+    .heroBanner .indication { bottom: 36px; font-size: 15px; }
+    .intro  { padding: 5% 0px 10%; }
+    .intro .introImage  
+    { 
+        width: 100%; 
+        float: none; 
+        padding-top: 25px;
+        opacity: 1 !important;
+        left: 0px !important;
+        
+        -o-transition: .0s ease-in-out !important;
+        -moz-transition: .0s ease-in-out !important;
+        -webkit-transition: .0s ease-in-out !important;
+        transition: .0s ease-in-out !important;
+    }
+    .intro .imageHolder 
+    { 
+        margin: 0px auto;  
+        width: 215px;
+        height: 215px;
+        line-height: 200px;
+        float: none;
+        border: 4px solid #41c8ff;
+        
+        -o-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .intro .introImage span { display: none; }
+    .intro .introInfo   
+    {
+        width: 100%; 
+        padding: 30px 9px 0px; 
+        text-align: center; 
+        right: 0px !important;
+
+        -o-transition: .0s ease-in-out !important;
+        -moz-transition: .0s ease-in-out !important;
+        -webkit-transition: .0s ease-in-out !important;
+        transition: .0s ease-in-out !important;
+    }
+    .intro .introInfo h2    { line-height: 26px; }
+    .intro .introInfo h2 strong { font-size: 29px; }
+    .intro .introInfo label { padding: 11px 0px 7px 0px; }
+    .intro .introInfo .downloadCV   { width: 100%; }
+    h3  
+    { 
+        width: 70% !important;  
+        padding-bottom: 15px !important; 
+        line-height: 25px;
+    }
+    h3 strong   { font-size: 27px; }
+    h3 strong:after { top: 29px; }
+    .services .servicesInfo ul  { padding: 45px 20px 0px; }
+    .services .servicesInfo ul li   { width: 100%; padding: 0px; }
+    .services .servicesInfo ul li .serviceDetail p  { padding: 0px; }
+    .services .servicesInfo ul .css3 .serviceImg    { height: 61px; }
+    .services .servicesInfo .css3 .serviceImg svg   { top: -7px; }
+    .services .servicesInfo ul li   { padding: 14px 0px; }
+    .services .servicesInfo ul li .serviceDetail label  { padding: 0px 0px 3px; }
+    .services .servicesInfo ul li .serviceDetail p  { font-size: 14px; line-height: 18px; }
+    .skills { margin: 40px 0px 10px; }
+    .skills .skillsInfo { margin: 11% auto 0px; }
+    .skills .skillsInfo ul li  { padding: 18px 20px !important; } 
+    .skills .skillsInfo ul li label { width: 100% !important; text-align: center; padding: 0px; }
+    .skills .skillsInfo ul li .progressBar  { width: 100% !important; padding-top: 12px; }
+    .portfolio  { padding-bottom: 13%; }
+    .portfolio h3   { padding: 13% 0px 11% !important; font-size: 14px; }
+    .portfolio .thumbs  { opacity: 1 !important; position: static !important; }
+    .education  { padding: 12% 0px 0px; }
+    .education h3   { width: 65% !important; }
+    .education .studyBox   { opacity: 1 !important; }
+    .education .leftInfo, .education .rightInfo    
+    { 
+        width: 100%; 
+        border: none; 
+        position: static !important;
+        opacity: 1 !important;
+        
+        -o-transition: 0s ease !important;
+        -moz-transition: 0s ease !important;
+        -webkit-transition: 0s ease !important;
+        transition: 0s ease !important;
+    }
+    .education .leftInfo:after { display: none; }
+    .education .indication { display: none; }
+    .education .rightInfo .bulleted     { display: none; }
+    .education .leftInfo .studyBox   { border-left: none; }
+    .education .rightInfo .studyBox  { border-right: none; }
+    .education .rightInfo   { padding: 0px 10px; }
+    .education .leftInfo    { padding-top: 16px; }
+    .studyBox h4:before    { display: none; }
+    .studyBox   { padding: 15px 10px; text-align: center; border-bottom: 3px solid #3daeff; }
+    .studyBox label { line-height: 22px; }
+    .studyBox label span    { display: block; }
+    .studyBox p { font-size: 14px; line-height: 20px; }
+    .experience { padding-bottom: 30px; }
+    .experience h3  { width: 68% !important; margin-bottom: 35px; }
+    .experience .studyBox   { width: 93%; text-align: center; }
+    .experience .studyBox h4  { font-size: 20px; }  
+    .experience .studyBox a  { padding: 3px 0px; }   
+    .experience .studyBox label { display: block; padding: 0px; }
+    .experience .studyBox p { padding-top: 4px; }
+    .interest   { padding: 10% 0px 35px; }
+    .interest ul { text-align: center; }
+    .interest ul li   
+    { 
+        width: 47%; 
+        margin: 0px 4px 19px; 
+        position: static !important;
+        opacity: 1 !important; 
+    }
+    .interest ul li label   { opacity: 1; top: 0px; font-size: 18px; }
+    .footerMain { height: auto; background-size: 145% 100%; }
+    .footerInfo { padding-top: 30px; }
+    .footerInfo h5  { line-height: 34px; font-size: 27px; padding-bottom: 5px; }
+    .footerInfo p   { padding: 5px 15px 0px; font-size: 15px; }
+    .footerInfo .getInTouch { padding-top: 20px; }
+    .footerInfo .getInTouch a  { margin: 10px 0px; }
+    .footerInfo .getInTouch .contact  { display: block; width: 190px; margin: 5px auto; }
+    .footerInfo .socialMedia    { padding: 25px 0px 35px; }
+    .footerInfo .socialMedia label  { font-size: 17px; }
+    footer .copyright   { padding: 8px 0px; font-size: 12px; }
+    footer .copyright span  { font-size: 12px; }
+    footer .copyright a { font-size: 13px; }
+    footer .copyright img   { max-width: 16px; }
+    
+}

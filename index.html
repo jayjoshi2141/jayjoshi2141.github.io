@@ -1,0 +1,657 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Joshi</title>  
+  <link rel="stylesheet" href="inc/css/style.css"> 
+  <link rel="stylesheet" href="inc/css/style_responsive.css"> 
+  <link rel="stylesheet" href="inc/css/jquery.lineProgressbar.css">
+  <link rel="stylesheet" href="inc/css/lightgallery.css">
+    
+  <script src="inc/js/jquery.min.js"></script>
+  <script src="inc/js/jquery.lineProgressbar.js"></script>
+  <script src="inc/js/picturefill.min.js"></script>
+  <script src="inc/js/lightgallery-all.min.js"></script>
+  <script src="inc/js/jquery.lazylinepainter-1.7.0.min.js"></script>
+  <script src="inc/js/main.js"></script>
+	
+    
+    <script>
+        
+         $(document).ready(function(){
+             
+             /* for scroll down */
+             $(".indication").click(function(event){
+                var tabName = $(this).attr('name');
+                event.preventDefault();
+                var full_url = this.href;
+                var parts = full_url.split('#');
+                var trgt = parts[1];
+                var target_offset = $("#"+trgt).offset();
+                var target_top = target_offset.top;
+                $('html, body').animate({scrollTop:target_top}, 1000); 
+             });
+             
+             $('#lightgallery').lightGallery();
+             
+             /*##### for scroll down #####*/
+             
+             
+             /*##### for intro text #####*/
+             setTimeout(function() {
+                    $('.fly-in-text').removeClass('hidden');
+              }, 200);
+             
+
+             /*##### birds and clouds #####*/
+             setTimeout(function() {
+                    $('.birdsCloud').removeClass('hidden');
+                    $('.birdsCloud').removeClass('hidden_right');
+              }, 700);
+             
+             
+             /*##### section: Herotext #####*/
+             setTimeout(function() {
+                    $('.heroText').removeClass('hidden');
+              }, 800);
+             
+             
+             $(window).scroll(function(){
+                 
+                 /*##### section: Intro #####*/
+                 if($(window).scrollTop() > $('#intro').offset().top-300 )
+                     {
+                        $(".intro .introImage").addClass("introImageActive");
+                        $(".intro .introInfo").addClass("introInfoActive"); 
+                     }
+                    else
+                     {     
+                     }
+                 
+                 
+                /*##### section: services #####*/
+                 if($(window).scrollTop() > $('#coding').offset().top-450 && !$('#services').hasClass('xyz'))
+                 {
+                     //alert("call");
+                     sanket();
+                     $("#services").addClass('xyz');
+                     //$(".services .serviceImg div").addClass("lazylinepainter");
+                 }
+                 else
+                 {
+
+                 }
+                 
+                /*##### section: skill #####*/
+                 if(($(window).scrollTop() > $('.skills').offset().top-200) && !$('.skills').hasClass('progressdone'))
+                     {
+                        $('#progressbar1').LineProgressbar({
+                             percentage: 35,
+                             fillBackgroundColor: '#118ef2',
+                             radius: '5px'    
+                           });
+                         
+                         $('#progressbar2').LineProgressbar({
+                             percentage: 85,
+                             fillBackgroundColor: 'rgb(62, 88, 230)',
+                             radius: '5px'    
+                           });
+
+                          $('#progressbar3').LineProgressbar({
+                             percentage: 20,
+                             fillBackgroundColor: '#119c8f',
+                             radius: '5px'    
+                           });
+
+                          $('#progressbar4').LineProgressbar({
+                             percentage: 90,
+                             fillBackgroundColor: '#fbba18',
+                             radius: '5px'    
+                           });
+
+                          $('#progressbar5').LineProgressbar({
+                             percentage: 25,
+                             fillBackgroundColor: '#ed423d',
+                             radius: '5px'    
+                           });
+
+                          $('#progressbar6').LineProgressbar({
+                             percentage: 70,
+                             fillBackgroundColor: '#a844bb',
+                             radius: '5px'    
+                           });
+                         
+                         $('#progressbar7').LineProgressbar({
+                             percentage: 15,
+                             fillBackgroundColor: '#2dd066',
+                             radius: '5px'    
+                           });
+                         
+                         $('#progressbar8').LineProgressbar({
+                             percentage: 40,
+                             fillBackgroundColor: '#07b7bd',
+                             radius: '5px'    
+                           });
+                         
+                         $('.skills').addClass('progressdone');
+                     }
+                    else
+                     {     
+                     }
+                 
+
+                 /*##### section: Portfolio #####*/
+                 if($(window).scrollTop() > $('#portfolio').offset().top-250)
+                     {
+                         $(".thumbs").addClass("activeGallery");
+                     }
+                         
+                 
+                 
+                 /*##### section: education #####*/
+                 if($(window).scrollTop() > $('#education').offset().top-200 )
+                     {
+                        $(".education .studyBox").addClass("boxActive");
+                     }
+                    else
+                     {     
+                     }
+                 
+                 /*##### section: Experience #####*/
+                 if($(window).scrollTop() > $('#experience').offset().top-200 )
+                     {
+                        $(".experience .studyBox").addClass("boxActive");
+                     }
+                    else
+                     {     
+                     }
+                 
+                 /*##### section: Interest #####*/
+                 if($(window).scrollTop() > $('#interest').offset().top-250 )
+                     {
+                         $(".interest ul").addClass("active");
+                     }
+                    else
+                     {
+                         
+                     }
+                 
+                 /*##### section: Footer #####*/
+                 if($(window).scrollTop() > $("#footer").offset().top-400)
+                     {
+                         $("footer .footerMain").addClass("active");
+                     }
+                    else
+                     {
+                        
+                     }
+                })
+            })
+    </script>    
+
+  </head>
+<body>
+    
+    
+<!--## for loader## -->
+
+    
+    
+    
+<!--############################################
+#################  Hero Banner  ################
+#############################################-->
+
+<section class="heroBanner">
+  <section class="wrapper">
+        <div class="fly-in-text hidden">        
+            <ul> 
+                <li>E</li><li>v</li><li>e</li><li>r</li><li>y</li><li>t</li><li>h</li><li>i</li><li>n</li><li>g</li>
+                <li>  </li><li>i</li><li>s</li>
+                <li>  </li><li>A</li><li>b</li><li>o</li><li>u</li><li>t</li><li> </li>
+                <li>t</li><li>o</li><li> </li><li>b</li><li>e</li>
+            </ul>
+        </div>  <!-- shortQuote ends -->
+      
+        <div class="inventive">
+            <span class="birdsCloud birds_left hidden">
+                <img src="images/birds_left.png">
+            </span>  
+
+            <div class="inventiveImg">
+                <div class="heroText hidden">
+                    <img src="images/i.png" alt="I">
+                    <img class="n" src="images/n.png" alt="N">
+                    <img class="v" src="images/v.png" alt="V">
+                    <img class="e" src="images/e.png" alt="E">
+                    <img class="n2" src="images/n2.png" alt="N">
+                    <img class="t" src="images/t.png" alt="T">
+                    <img class="i2" src="images/i2.png" alt="I">
+                    <img class="v2" src="images/v2.png" alt="V">
+                    <img class="e2" src="images/e2.png" alt="E">
+                </div>    <!-- heroText ends -->    
+            </div> <!-- inventive ends -->
+
+            <span class="birdsCloud birds_right hidden_right">
+                <img src="images/birds_right.png">
+            </span>  
+        </div> <!-- inventive ends -->
+          
+    </section> <!-- wrapper ends -->
+
+    <a class="indication" href="#intro">
+        <span> <img src="images/scroll_down.gif"> </span><br />
+        Scroll down
+    </a>    <!-- indication ends -->
+
+</section>  <!-- heroBanner ends -->
+
+
+<!--############################################
+#################  Intro  ################
+#############################################-->
+
+<section class="intro" id="intro">
+  <section class="wrapper">
+    <div class="introImage">
+      <div class="imageHolder">
+        <img src="images/intro.png" />
+      </div> <!-- imageHolder ends -->
+    <span></span>
+    </div>  <!-- introImage ends -->
+    <div class="introInfo">
+      <h2>nice to meet you <strong>Hi there, I am Jay</strong></h2>
+      <label>Welcome to My site. </label>
+      <p>Myself Jay Joshi and I'm Jr. Web, UI & UX designer. </p>
+      <p>I Design crystal clear web and User Interfaces with the Digital experience. <br />
+It is something that i enjoy the design to be involved in it.</p>
+        <div class="downloadCV">
+          <a href="https://1drv.ms/w/s!Ali4OqlP3XNAgbN06QK6kxOh2QjpRg" target="_blank">Download CV</a>
+        </div>  <!-- downloadCV ends -->
+    </div> <!-- introInfo ends -->
+    <div class="clr"></div>
+  </section> <!-- wrapper ends -->
+</section> <!-- intro ends -->
+
+
+
+<!--############################################
+#################  Services  ################
+#############################################-->
+
+
+<section class="services" id="services">
+  <section class="wrapper">
+    <h3>What I do <strong>My Services</strong></h3>
+    <div class="servicesInfo">
+      <ul>
+        <li class="clearHtml">
+          <div class="serviceImg">
+            <div id="coding"></div>  
+          </div>  <!-- serviceImg ends -->
+          
+          <div class="serviceDetail" id="serviceImg">
+            <label> Psd to Html </label>
+            <p>Convert Photoshop designs to HTML codes to promise their reach to wider audience base.</p>
+          </div> <!-- serviceDetail ends -->
+        </li>
+
+        <li class="wordpress">
+          <div class="serviceImg">
+              <div id="wordpress"></div>
+          </div>  <!-- serviceImg ends -->
+          <div class="serviceDetail">
+            <label> Psd to Wordpress </label>
+            <p>Provide extensive PSD to WordPress & custom WordPress web development with same quality.</p>
+          </div> <!-- serviceDetail ends -->
+        </li>
+
+        <li class="graphics">
+          <div class="serviceImg">
+               <div id="web_design"></div>
+          </div>  <!-- serviceImg ends -->
+          <div class="serviceDetail">
+            <label> Web Design </label>
+            <p>Starting with the edge of creativity & delivering spoken design with main purpose.</p>
+          </div> <!-- serviceDetail ends -->
+        </li>
+
+        <li class="responsive">
+          <div class="serviceImg">
+             <div id="web_ui_ux"></div>
+          </div>  <!-- serviceImg ends -->
+          <div class="serviceDetail">
+            <label>Ui & UX Design</label>
+            <p>Providing unique design & deliver unique experience where no boundry for compromise.</p>
+          </div> <!-- serviceDetail ends -->
+        </li>
+
+        <li>
+          <div class="serviceImg">
+             <div id="responsive"></div>
+          </div>  <!-- serviceImg ends -->
+          <div class="serviceDetail">
+            <label> Responsive Design </label>
+            <p>Provide Resposnive Design to feel same experience in Desktop in Tablet as well as Phone. </p>
+          </div> <!-- serviceDetail ends -->
+        </li>
+
+        <li>
+          <div class="serviceImg">
+             <div id="video-camera"></div>
+          </div>  <!-- serviceImg ends -->
+          <div class="serviceDetail">
+            <label>Video Animations</label>
+            <p>Animate unique video with core message & brings your messages with goal without words.</p>
+          </div> <!-- serviceDetail ends -->
+        </li>
+
+      </ul>
+    </div>  <!-- servicesInfo ends -->
+  </section> <!-- wrapper ends -->
+</section>  <!-- services ends -->
+
+
+
+
+<!--############################################
+#################  Skills  #####################
+#############################################-->
+
+<section class="skills">
+  <section class="wrapper">
+    <h3>what i have <strong>My Skills</strong></h3>
+    <div class="skillsInfo">
+        <ul>
+        <li>
+            <label>Photoshop</label>
+            <div class="progressBar" id="progressbar1"></div>
+            <div class="clr"></div>
+        </li>    <!-- skillSet ends -->  
+
+        <li>
+            <label>HTML</label>
+            <div class="progressBar" id="progressbar2"></div>
+            <div class="clr"></div>
+        </li>    <!-- skillSet ends -->  
+
+        <li>
+            <label>Illustrator</label>
+            <div class="progressBar" id="progressbar3"></div>
+            <div class="clr"></div>
+        </li>    <!-- skillSet ends -->  
+
+        <li>
+            <label>CSS</label>
+            <div class="progressBar" id="progressbar4"></div>
+            <div class="clr"></div>
+        </li>    <!-- skillSet ends -->  
+
+        <li>
+            <label>Corel Draw</label>
+            <div class="progressBar" id="progressbar5"></div>
+            <div class="clr"></div>
+        </li>    <!-- skillSet ends -->  
+
+        <li>
+            <label>SCSS</label>
+            <div class="progressBar" id="progressbar6"></div>
+            <div class="clr"></div>
+        </li>    <!-- skillSet ends -->
+        
+        <li>
+            <label>After Effects</label>
+            <div class="progressBar" id="progressbar7"></div>
+            <div class="clr"></div>
+        </li>    <!-- skillSet ends -->
+            
+        <li>
+            <label>Javascript</label>
+            <div class="progressBar" id="progressbar8"></div>
+            <div class="clr"></div>
+        </li>    <!-- skillSet ends -->    
+
+        <div class="clr"></div>
+        </ul>
+    </div>  <!-- skillsInfo ends -->
+      
+    </section> <!-- wrapper ends -->
+</section>  <!-- skills ends -->
+
+
+<!--############################################
+#################  Portfolio  ##################
+#############################################-->
+
+<section class="portfolio" id="portfolio">
+  <h3>Some of My Work <strong> My Portfolio </strong> </h3>
+  <section class="wrapper">
+    <div class="thumbs">
+
+        <ul id="lightgallery" class="list-unstyled row">
+
+          <li class="col-xs-6 col-sm-4 col-md-3 gallery1" data-src="images/gallery1_large.png">
+              <a href="">
+                  <img class="img-responsive" src="images/gallery1.png" />
+              </a>
+              <div class="overlay"> <label>App Banner</label> </div> <!-- overlay ends --> 
+          </li>
+
+          <li class="gallery2 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery2_large.png">
+             <a href="">
+                 <img class="img-responsive" src="images/gallery2.png" />
+             </a>
+             <div class="overlay"> <label> User Interface </label> </div> <!-- overlay ends -->   
+
+          </li>
+
+          <li class="gallery3 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery3_large.png">
+             <a href="">
+                 <img class="img-responsive" src="images/gallery3.png" />
+             </a>
+             <div class="overlay"> <label> Login UI </label> </div> <!-- overlay ends -->  
+
+          </li>
+
+          <li class="gallery4 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery4_large.png">
+             <a href="">
+                 <img class="img-responsive" src="images/gallery4.png" />
+             </a>
+             <div class="overlay"> <label> Logo Design </label> </div> <!-- overlay ends -->  
+
+          </li>
+
+          <li class="gallery5 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery5_large.jpg">
+             <a href="">
+                <img class="img-responsive" src="images/gallery5.png" />
+             </a>
+             <div class="overlay"> <label> Business Card </label> </div> <!-- overlay ends -->  
+          </li>
+
+          <li class="gallery6 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery6_large.png">
+             <a href="">
+                <img class="img-responsive" src="images/gallery6.png" />
+             </a>
+            <div class="overlay"> <label> Business Card </label> </div> <!-- overlay ends -->  
+          </li>
+
+          <li class="gallery7 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery7_large.png">
+             <a href="">
+                 <img class="img-responsive" src="images/gallery7.png" />
+             </a>
+             <div class="overlay"> <label> Banner </label> </div> <!-- overlay ends -->  
+          </li>
+
+          <li class="gallery8 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery8_large.png">
+             <a href="">
+                 <img class="img-responsive" src="images/gallery8.png" />
+             </a>
+             <div class="overlay"> <label> Infographic </label> </div> <!-- overlay ends -->  
+          </li>
+            
+          <li class="gallery9 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery9_large.png">
+             <a href="">
+                 <img class="img-responsive" src="images/gallery9.png" />
+             </a>
+             <div class="overlay"> <label> Splash screen </label> </div> <!-- overlay ends -->  
+          </li>
+        </ul>          
+        <div class="clr"></div>
+      </div>  <!-- thumbs ends -->
+  </section> <!-- wrapper ends -->
+</section> <!-- portfolio ends -->
+
+
+<!--############################################
+#################  Education  ##################
+#############################################-->
+
+<section class="education" id="education">
+  <h3>About My Study<strong>My Education</strong></h3>
+  <section class="wrapper">
+
+      <div class="leftInfo">
+        <div class="studyBox">
+          <span class="indication"></span>     
+          <h4>Msc (IT)</h4>
+          <label>Gls University  - <span>April 2017</span></label>
+          <p>Post Graduted as Master Of Science in Information Technology with 6.80 CGPA.</p>
+        </div>  <!-- studyBox ends -->
+
+        <div class="studyBox">
+          <span class="indication"></span>  
+          <h4>HSC</h4>
+          <label>Shree Vividhlaxi Vidyamandir  -  <span>May 2012</span></label>
+          <p>Completed higher secondary education with 65.47% at Vividhlaxi Vidyamandir Palanpur.</p>
+          <span class="bulleted box3"></span>
+        </div>  <!-- studyBox ends -->
+      </div>  <!-- leftInfo ends -->
+
+      <div class="rightInfo">
+        <div class="studyBox">
+          <span class="indication"></span>
+          <h4>Bsc (CA & IT)</h4>
+          <label>Ganpat University  -  <span>April 2017</span></label>
+          <p>Graduted as Bachlor of science in Information Technology with 6.84 CGPA.</p>
+          <span class="bulleted"></span>
+        </div>  <!-- studyBox ends -->
+
+        <div class="studyBox">
+          <span class="indication"></span>  
+          <h4>SSC</h4>
+          <label>Shree Vividhlaxi Vidyamandir  -  <span>May 2010</span></label>
+          <p>Completed Secondary Education with 76.46% at Vividhlaxi Vidyamandir Palanpur.</p>
+          <span class="bulleted box4"></span>
+        </div>  <!-- studyBox ends -->
+      </div>  <!-- leftInfo ends -->
+      <div class="clr"></div>
+      
+  </section> <!-- wrapper ends -->
+</section> <!-- education ends -->
+    
+
+
+<!--############################################
+#################  Experience  ##################
+#############################################-->
+    
+<section class="experience" id="experience"> 
+    <section class="wrapper">    
+        <h3>Since I Work <strong>My Experience</strong></h3>
+
+        <div class="studyBox">
+          <span></span>  
+          <h4>Jr. Web, UI & UX Designer</h4>
+          <a href="http://www.crossshoresolutions.com/" target="_blank">CrossShore Solutions</a><label> - May 2017</label>
+          <p>Working as Jr. Web Designer. Work on Web Design, Psd to html, UI & UX Design and Responsive Web Design.</p>
+          <span class="bulleted box4"></span>
+        </div>  <!-- studyBox ends -->
+
+    </section> <!-- wrapper ends -->
+</section>  <!-- experience ends -->
+
+<!--############################################
+#################  Interest  ###################
+#############################################-->
+
+<section class="interest" id="interest">
+  <section class="wrapper">
+    <h3>About my hobbies <strong>My Interest</strong></h3>
+    <div class="interestInfo">
+      <ul>
+        <li class="travelling odd">
+          <span></span>
+          <label>Travelling</label>
+        </li>
+        <li class="photography even">
+          <span></span>
+          <label>Photography</label>
+        </li>
+        <li class="dance odd">
+          <span></span>
+          <label>Dance</label>
+        </li>
+        <li class="modeling even">
+          <span></span>
+          <label>Modeling</label>
+        </li>
+        <li class="music odd">
+          <span></span>
+          <label>Music</label>
+        </li>
+      </ul>
+    </div>  <!-- interestInfo ends -->
+  </section> <!-- wrapper ends -->
+</section>  <!-- interest ends -->
+
+
+<!--############################################
+#################  Footer  ###################
+#############################################-->
+
+<footer id="footer">
+<div class="footerMain">    
+  <section class="wrapper">
+    <div class="footerInfo">
+      <h5>Let's <strong>Materilize</strong> Your <strong>Imagination</strong> with me</h5>
+      <p>Please feel fee to leave a message to me. I would love to hear from you anytime. Also you can call me or push me a message to my social networks. </p>
+
+      <script async src="https://sdk.canva.com/v1/embed.js"></script>
+    
+      <div class="getInTouch">  
+          <a href="mailto:jayjoshi2141@outlook.com" class="email" title="My Email">
+            <span></span> jayjoshi2141@outlook.com
+          </a>
+
+          <a href="tel:+91 99797 65012" class="contact" title="My Contact">
+            <span></span>+91 99797 65012
+          </a> 
+
+          <a href="javascript:;" class="myLocation" title="My Location">
+            <span></span>Ahmedabad
+          </a> 
+      </div>    <!-- getInTouch ends -->    
+        
+    <div class="socialMedia">
+        <label>Available on</label>
+        <a href="https://www.facebook.com/jayjoshi1310" target="_blank" title="Facebook" class="facebook"></a>
+        <a href="https://www.instagram.com/jazjoshi/" target="_blank" title="Instagram" class="instagram"></a>
+        <a href="https://www.linkedin.com/in/jay-joshi-3b1702123/" target="_blank" title="LinkedIn" class="linkedin"></a>
+    </div> <!-- socialMedia ends -->    
+
+    </div>  <!-- footerInfo ends -->
+      
+    <span class="myImage">
+        <img src="images/jj.png">
+    </span>   <!-- myImage ends -->
+    <div class="clr"></div>
+  </section> <!-- wrapper ends -->
+</div>  <!-- footerMain ends -->    
+  
+<label class="copyright">Design & Develop with <img title="Love" src="images/love.png"> by Jay Joshi &copy; 2017 <a href="">jayjoshi.in</a></label>
+
+</footer>  <!-- footerMain ends -->
+
+</body>
+</html>
