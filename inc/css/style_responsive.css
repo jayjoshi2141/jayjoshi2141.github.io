@@ -1,3 +1,6 @@
+
+/* for desktop  */
+
 @media only screen and (max-width: 1170px)
 {
     .wrapper    { width: 980px; }
@@ -47,6 +50,9 @@
     .footerInfo .getInTouch a   { margin-right: 15px; }
     
 }
+
+
+/* for iPad  */
 
 @media only screen and (max-width: 980px)
 {
@@ -143,6 +149,9 @@
     
 }
 
+
+/* for mobile  */
+
 @media only screen and (max-width: 767px)
 {   
     .wrapper    { width: 100%; }
@@ -154,7 +163,7 @@
         -webkit-transform: translateX(0px) translateY(161px);
         transform: translateX(0px) translateY(161px);
     }
-    .heroBanner { height: 520px; }
+    .heroBanner { height: 525px; }
     .heroBanner .birdsCloud { top: -123px; left: 5px; }
     .heroBanner .birdsCloud img { max-width: 75%; }
     .heroBanner .birds_right    { left: auto; right: -63px; top: -109px; }
@@ -177,7 +186,7 @@
     { 
         width: 100%; 
         float: none; 
-        padding-top: 25px;
+        padding-top: 5px;
         opacity: 1 !important;
         left: 0px !important;
         
@@ -234,16 +243,22 @@
     .services .servicesInfo ul li .serviceDetail label  { padding: 0px 0px 3px; }
     .services .servicesInfo ul li .serviceDetail p  { font-size: 14px; line-height: 18px; }
     .skills { margin: 40px 0px 10px; }
+    .progressdone   { opacity: 1 !important; display: block; }
     .skills .skillsInfo { margin: 11% auto 0px; }
     .skills .skillsInfo ul li  { padding: 18px 20px !important; } 
     .skills .skillsInfo ul li label { width: 100% !important; text-align: center; padding: 0px; }
-    .skills .skillsInfo ul li .progressBar  { width: 100% !important; padding-top: 12px; }
+    .skills .skillsInfo ul li .progressBar  
+    { 
+        width: 100% !important; 
+        padding-top: 12px; 
+    }
     .portfolio  { padding-bottom: 13%; }
     .portfolio h3   { padding: 13% 0px 11% !important; font-size: 14px; }
-    .portfolio .thumbs  { opacity: 1 !important; position: static !important; }
+    .portfolio .thumbs  { opacity: 1 !important; position: static !important; padding: 0px 6px; }
+    .portfolio ul li    { margin-bottom: 6px; }
     .education  { padding: 12% 0px 0px; }
     .education h3   { width: 65% !important; }
-    .education .studyBox   { opacity: 1 !important; }
+    .education .studyBox   { opacity: 1 !important; margin: 0px 3px 12%; }
     .education .leftInfo, .education .rightInfo    
     { 
         width: 100%; 
@@ -279,7 +294,7 @@
     .interest ul { text-align: center; }
     .interest ul li   
     { 
-        width: 47%; 
+        width: 44.5%; 
         margin: 0px 4px 19px; 
         position: static !important;
         opacity: 1 !important; 
