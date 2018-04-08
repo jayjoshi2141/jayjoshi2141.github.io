@@ -93,14 +93,16 @@ h3 strong {
   text-transform: none;
 }
 h3 strong:after {
-  content: "\f192";
-  font-family: "FontAwesome";
-  font-size: 24px;
-  color: #3daeff;
+  content: " ";
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background: url('../../images/sprite.png') no-repeat;
+  background-size: 160px 499px;
+  background-position: -65px -303px;    
   position: absolute;
   top: 32px;
-  left: 45%;
-  background: #ffffff;
+  left: 43.8%;
 }
 
 
@@ -379,9 +381,7 @@ h3 strong:after {
     padding: 35px 0px;
 }
 .services h3    { padding-bottom: 20px; }
-.services h3 strong:after {
-    background: none;
-}
+.services h3:after  { top: 35px; }
 .services .servicesInfo .serviceImg .lazylinepainter {
     text-align: center;
     margin: 0px auto;
