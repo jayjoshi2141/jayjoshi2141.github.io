@@ -125,8 +125,7 @@ var pathObj6 = {
  
 
 
-var sanket = function(){ 
-    console.log(new Date());
+var svgIcon = function(){ 
      $('#video-camera').lazylinepainter( 
      {
         "svgData": pathObj,
@@ -168,11 +167,60 @@ var sanket = function(){
         "strokeWidth": 0.8,
         "strokeColor": "#3daeff"
     }).lazylinepainter('paint'); 
-     console.log(new Date());
  };
 
 $(document).ready(function(){
-   sanket(); 
+    if($(window).width() <= 767) {
+    $('#progressbar1').LineProgressbar({
+         percentage: 35,
+         fillBackgroundColor: '#118ef2',
+         radius: '5px'    
+       });
+
+     $('#progressbar2').LineProgressbar({
+         percentage: 85,
+         fillBackgroundColor: 'rgb(62, 88, 230)',
+         radius: '5px'    
+       });
+
+      $('#progressbar3').LineProgressbar({
+         percentage: 20,
+         fillBackgroundColor: '#119c8f',
+         radius: '5px'    
+       });
+
+      $('#progressbar4').LineProgressbar({
+         percentage: 90,
+         fillBackgroundColor: '#fbba18',
+         radius: '5px'    
+       });
+
+      $('#progressbar5').LineProgressbar({
+         percentage: 25,
+         fillBackgroundColor: '#ed423d',
+         radius: '5px'    
+       });
+
+      $('#progressbar6').LineProgressbar({
+         percentage: 70,
+         fillBackgroundColor: '#a844bb',
+         radius: '5px'    
+       });
+
+     $('#progressbar7').LineProgressbar({
+         percentage: 15,
+         fillBackgroundColor: '#2dd066',
+         radius: '5px'    
+       });
+
+     $('#progressbar8').LineProgressbar({
+         percentage: 40,
+         fillBackgroundColor: '#07b7bd',
+         radius: '5px'    
+       });
+        $('.skills').addClass('progressdone');
+    }
+    svgIcon();
 });
 
     

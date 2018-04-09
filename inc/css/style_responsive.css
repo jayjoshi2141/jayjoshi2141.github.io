@@ -163,10 +163,20 @@
         -webkit-transform: translateX(0px) translateY(161px);
         transform: translateX(0px) translateY(161px);
     }
-    .heroBanner { height: 525px; }
+    .heroBanner { height: 525px; overflow: hidden}
     .heroBanner .birdsCloud { top: -123px; left: 5px; }
     .heroBanner .birdsCloud img { max-width: 75%; }
-    .heroBanner .birds_right    { left: auto; right: -63px; top: -109px; }
+    .heroBanner .birds_right    { left: auto !important; right: -63px; top: -105px; }
+    .heroBanner .hidden_right    
+    { 
+        left: auto; 
+        right: 0px; 
+        
+        -o-transform: translate3d(-5%, 190%, 0);
+        -moz-transform: translate3d(-5%, 190%, 0);
+        -webkit-transform: translate3d(-5%, 190%, 0);
+        transform: translate3d(-5%, 190%, 0);
+    }
     .heroBanner .birds_right img    { max-width: 63%; }
     .heroBanner .inventiveImg   { top: -20px; }
     .heroBanner .inventiveImg .heroText img:first-child { max-width: 18px !important; }
@@ -273,6 +283,7 @@
     }
     .education .leftInfo:after { display: none; }
     .education .indication { display: none; }
+    .education .leftInfo .box3  { display: none; }
     .education .rightInfo .bulleted     { display: none; }
     .education .leftInfo .studyBox   { border-left: none; }
     .education .rightInfo .studyBox  { border-right: none; }
