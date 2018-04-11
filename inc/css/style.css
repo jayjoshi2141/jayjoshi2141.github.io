@@ -382,6 +382,7 @@ h3 strong:after {
 }
 .services h3    { padding-bottom: 20px; }
 .services h3:after  { top: 35px; }
+.services h3 strong:after   { top: 35px; left: 43.5%; }
 .services .servicesInfo .serviceImg .lazylinepainter {
     text-align: center;
     margin: 0px auto;
@@ -724,19 +725,31 @@ h3 strong:after {
     top: 70%;
 }
 .education .rightInfo .studyBox:last-child .indication { display: none; }
-.education .leftInfo .indication:before {
-    content: "\f053";
-}
 .education .indication:before
 {
-    content: "\f054";
-    font-family: 'FontAwesome', sans-serif;
-    font-size: 14px;
-    color: #ffffff;
+    content: " ";
+    height: 20px;
+    width: 20px;
     position: absolute;
-    top: 3px;
-    left: 9px;
-    transform: skewX(10deg)
+    top: 2px;
+    left: 4px;
+    background: url(../../images/sprite.png) no-repeat;
+    background-size: 170px 530px;
+    background-position: -75px -285px;
+    
+    -o-transform: rotate(0Deg);
+    -moz-transform: rotate(0Deg);
+    -webkit-transform: rotate(0Deg);
+    transform: rotate(0Deg);
+}
+.education .rightInfo .indication:before    
+{ 
+    top: 0px;
+    
+    -o-transform: rotate(180Deg);
+    -moz-transform: rotate(180Deg);
+    -webkit-transform: rotate(180Deg);
+    transform: rotate(180Deg);
 }
 .education .bulleted
 {
