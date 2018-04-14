@@ -349,18 +349,23 @@ h3 strong:after {
   width: 91%;
 }
 .intro .introInfo a {
-  font-size: 16px;
-    background: -o-linear-gradient(to right, #ff476f , #d057bf);
-    background: -moz-linear-gradient(to right, #ff476f , #d057bf);
-    background: -webkit-linear-gradient(to right, #ff476f , #d057bf);
-  background: linear-gradient(to right, #ff476f , #d057bf);
-  color: #ffffff;
-  padding: 10px 47px 10px 34px;
-    -o-border-radius: 45px;
-    -moz-border-radius: 45px;
-    -webkit-border-radius: 45px;
+  font-size: 17px;
+  background: #fff;
+  border: 1px solid #41c8ff; 
+  color: #41c8ff;
+  font-weight: 700;    
+  padding: 10px 47px 10px 29px;
+  position: relative;
+    
+  -webkit-box-shadow: 0px 1px 9px 0px rgba(65, 200, 255, 0.60);
+  -moz-box-shadow:    0px 1px 9px 0px rgba(65, 200, 255, 0.60);
+  box-shadow:         0px 1px 9px 0px rgba(65, 200, 255, 0.60);  
+    
+  -o-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
   border-radius: 45px;
-    position: relative;
+    
 }
 .intro .introInfo a:before
 {
@@ -372,7 +377,7 @@ h3 strong:after {
     background-position: 0px 0px;
     position: absolute;
     top: 10px;
-    right: 22px;
+    right: 20px;
 }
 
 
