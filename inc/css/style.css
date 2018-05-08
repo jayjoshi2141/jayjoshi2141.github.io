@@ -111,7 +111,7 @@ h3 strong:after {
 
 .heroBanner {
   background: radial-gradient(at bottom center, #caf5ff,#44dcff,#3a9eff);
-  height: 680px;
+  height: 750px;
   position: relative;
 }
 .wrap {
@@ -936,7 +936,7 @@ h3 strong:after {
 { 
     float: right;
     width: 40%;
-    
+    opacity: 0;
     -o-transform: translate3d(110%, 5px, 0px);
     -moz-transform: translate3d(110%, 5px, 0px);
     -webkit-transform: translate3d(110%, 5px, 0px);
@@ -952,7 +952,8 @@ h3 strong:after {
     float: left;
     width: 60%;
     padding-top: 75px;
-     
+    opacity: 0;
+    
     -o-transform: translate3d(-110%, 5px, 0px);
     -moz-transform: translate3d(-110%, 5px, 0px);
     -webkit-transform: translate3d(-110%, 5px, 0px);
@@ -965,6 +966,7 @@ h3 strong:after {
 }
 footer .active .myImage  
 {
+    opacity: 1;
     -o-transform: translate3d(40%, 5px, 0px);
     -moz-transform: translate3d(40%, 5px, 0px);
     -webkit-transform: translate3d(40%, 5px, 0px);
@@ -972,6 +974,7 @@ footer .active .myImage
 } 
 footer .active .footerInfo  
 {
+    opacity: 1;
     -o-transform: translate3d(0, 5px, 0px);
     -moz-transform: translate3d(0, 5px, 0px);
     -webkit-transform: translate3d(0, 5px, 0px);
