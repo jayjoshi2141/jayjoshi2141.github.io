@@ -15,11 +15,21 @@
   <script src="inc/js/lightgallery-all.min.js"></script>
   <script src="inc/js/jquery.lazylinepainter-1.7.0.min.js"></script>
   <script src="inc/js/main.js"></script>
-	
     
     <script>
         
          $(document).ready(function(){
+             
+             /* for banner height */
+             $(function(){
+                $(window).load(function(){ // On load
+                    $('#heroBanner').css({'height':(($(window).height()))+'px'});
+                });
+                $(window).resize(function(){ // On resize
+                    $('#heroBanner').css({'height':(($(window).height()))+'px'});
+                });
+            });
+             
              
              /* for scroll down */
              $(".indication").click(function(event){
@@ -61,13 +71,13 @@
                  
                  /*##### section: Intro #####*/
                  if($(window).scrollTop() > $('#intro').offset().top-300 )
-                     {
-                        $(".intro .introImage").addClass("introImageActive");
-                        $(".intro .introInfo").addClass("introInfoActive"); 
-                     }
-                    else
-                     {     
-                     }
+                 {
+                    $(".intro .introImage").addClass("introImageActive");
+                    $(".intro .introInfo").addClass("introInfoActive"); 
+                 }
+                else
+                 {     
+                 }
                  
                  
                 /*##### section: services #####*/
@@ -203,7 +213,7 @@
 #################  Hero Banner  ################
 #############################################-->
 
-<section class="heroBanner">
+<section class="heroBanner" id="heroBanner">
   <section class="wrapper">
         <div class="fly-in-text hidden">        
             <ul> 
@@ -302,7 +312,7 @@ It is something that i enjoy the design to be involved in it.</p>
               <div id="wordpress"></div>
           </div>  <!-- serviceImg ends -->
           <div class="serviceDetail">
-            <label> Psd to Wordpress </label>
+            <label> PSD to Wordpress </label>
             <p>Provide extensive PSD to WordPress & custom WordPress web development with same quality.</p>
           </div> <!-- serviceDetail ends -->
         </li>
@@ -322,7 +332,7 @@ It is something that i enjoy the design to be involved in it.</p>
              <div id="web_ui_ux"></div>
           </div>  <!-- serviceImg ends -->
           <div class="serviceDetail">
-            <label>Ui & UX Design</label>
+            <label>UI & UX Design</label>
             <p>Providing unique design & deliver unique experience where no boundry for compromise.</p>
           </div> <!-- serviceDetail ends -->
         </li>
