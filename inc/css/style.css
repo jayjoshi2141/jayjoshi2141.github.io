@@ -111,7 +111,7 @@ h3 strong:after {
 
 .heroBanner {
   background: radial-gradient(at bottom center, #caf5ff,#44dcff,#3a9eff);
-  height: 750px;
+  min-height: 750px;
   position: relative;
 }
 .wrap {

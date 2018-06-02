@@ -58,7 +58,7 @@
 {
     .wrapper  { width: 768px; }
     body    { overflow-x: hidden; }
-    .heroBanner { height: 500px; }
+    .heroBanner { min-height: 500px; }
     .heroBanner .birds_right    { top: -90%; right: 0px; }
     .heroBanner .inventiveImg .heroText img     { max-width: 95px; }    
     .heroBanner .inventiveImg .heroText img:first-child  { max-width: 35px; }
@@ -163,7 +163,7 @@
         -webkit-transform: translateX(0px) translateY(161px);
         transform: translateX(0px) translateY(161px);
     }
-    .heroBanner { height: 525px; overflow: hidden}
+    .heroBanner { min-height: 525px; overflow: hidden}
     .heroBanner .birdsCloud { top: -123px; left: 5px; }
     .heroBanner .birdsCloud img { max-width: 75%; }
     .heroBanner .birds_right    { left: auto !important; right: -63px; top: -105px; }
