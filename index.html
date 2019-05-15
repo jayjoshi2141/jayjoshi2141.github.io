@@ -97,13 +97,13 @@
                  if(($(window).scrollTop() > $('.skills').offset().top-200) && !$('.skills').hasClass('progressdone'))
                      {
                         $('#progressbar1').LineProgressbar({
-                             percentage: 35,
+                             percentage: 60,
                              fillBackgroundColor: '#118ef2',
                              radius: '5px'    
                            });
                          
                          $('#progressbar2').LineProgressbar({
-                             percentage: 85,
+                             percentage: 90,
                              fillBackgroundColor: 'rgb(62, 88, 230)',
                              radius: '5px'    
                            });
@@ -121,13 +121,13 @@
                            });
 
                           $('#progressbar5').LineProgressbar({
-                             percentage: 25,
+                             percentage: 35,
                              fillBackgroundColor: '#ed423d',
                              radius: '5px'    
                            });
 
                           $('#progressbar6').LineProgressbar({
-                             percentage: 70,
+                             percentage: 75,
                              fillBackgroundColor: '#a844bb',
                              radius: '5px'    
                            });
@@ -139,7 +139,7 @@
                            });
                          
                          $('#progressbar8').LineProgressbar({
-                             percentage: 25,
+                             percentage: 20,
                              fillBackgroundColor: '#07b7bd',
                              radius: '5px'    
                            });
@@ -171,7 +171,7 @@
                  /*##### section: Experience #####*/
                  if($(window).scrollTop() > $('#experience').offset().top-200 )
                      {
-                        $(".experience .studyBox").addClass("boxActive");
+                        $(".experience").addClass("boxActive");
                      }
                     else
                      {     
@@ -381,7 +381,7 @@ It is something that i enjoy the design to be involved in it.</p>
         </li>    <!-- skillSet ends -->  
 
         <li>
-            <label>HTML</label>
+            <label>HTML5</label>
             <div class="progressBar" id="progressbar2"></div>
             <div class="clr"></div>
         </li>    <!-- skillSet ends -->  
@@ -393,7 +393,7 @@ It is something that i enjoy the design to be involved in it.</p>
         </li>    <!-- skillSet ends -->  
 
         <li>
-            <label>CSS</label>
+            <label>CSS3</label>
             <div class="progressBar" id="progressbar4"></div>
             <div class="clr"></div>
         </li>    <!-- skillSet ends -->  
@@ -411,13 +411,13 @@ It is something that i enjoy the design to be involved in it.</p>
         </li>    <!-- skillSet ends -->
         
         <li>
-            <label>After Effects</label>
+            <label>Adobe XD</label>
             <div class="progressBar" id="progressbar7"></div>
             <div class="clr"></div>
         </li>    <!-- skillSet ends -->
             
         <li>
-            <label>Javascript</label>
+            <label>jQuery</label>
             <div class="progressBar" id="progressbar8"></div>
             <div class="clr"></div>
         </li>    <!-- skillSet ends -->    
@@ -542,7 +542,7 @@ It is something that i enjoy the design to be involved in it.</p>
         <div class="studyBox">
           <span class="indication"></span>
           <h4>Bsc (CA & IT)</h4>
-          <label>Ganpat University  -  <span>April 2017</span></label>
+          <label>Ganpat University  -  <span>April 2015</span></label>
           <p>Graduted as Bachlor of science in Information Technology with 6.84 CGPA.</p>
           <span class="bulleted"></span>
         </div>  <!-- studyBox ends -->
@@ -566,20 +566,34 @@ It is something that i enjoy the design to be involved in it.</p>
 #################  Experience  ##################
 #############################################-->
     
-<section class="experience" id="experience"> 
+<section class="experience education" id="experience"> 
     <section class="wrapper">    
         <h3>Since I Work <strong>My Experience</strong></h3>
 
-        <div class="studyBox">
-          <span></span>  
-          <h4>Jr. Web, UI & UX Designer</h4>
-          <a href="http://www.crossshoresolutions.com/" target="_blank">CrossShore Solutions</a><label> - May 2017</label>
-          <p>Working as Jr. Web Designer. Work on Web Design, Psd to html, UI & UX Design and Responsive Web Design.</p>
-          <span class="bulleted box4"></span>
-        </div>  <!-- studyBox ends -->
+        <div class="leftInfo">
+          <div class="studyBox">
+            <span class="indication"></span>
+            <h4>Web Designer</h4>
+            <a href="https://streebo.com/" target="_blank">Streebo </a> <label>September-2018 to Present</label>
+            <p>Working as Jr. Web Designer. Work on Web Design, Psd to html, UI & UX Design and Responsive Web Design.</p>
+          </div>  <!-- studyBox ends -->
+        </div>  <!-- leftInfo ends -->
 
+        <div class="rightInfo">
+          <div class="studyBox">
+            <span class="indication"></span>
+            <h4>Jr. Web, UI & UX Designer</h4>
+            <a href="http://www.crossshoresolutions.com/" target="_blank">CrossShore Solutions</a>
+            <label>May-2017 to September-2018</label>
+            <p>Working as Jr. Web Designer. Work on Web Design, Psd to html, UI & UX Design and Responsive Web Design.</p>
+            <span class="bulleted box4"></span>
+          </div>  <!-- studyBox ends -->
+        </div> <!-- rightInfo ends -->
+        <div class="clr"></div>
+        
     </section> <!-- wrapper ends -->
 </section>  <!-- experience ends -->
+
 
 <!--############################################
 #################  Interest  ###################
