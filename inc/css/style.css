@@ -531,10 +531,12 @@ h3 strong:after {
 }
 .portfolio .activeGallery { opacity: 1; top: 0px; }
 .portfolio ul {
-  -moz-column-width: 16em;
-  -webkit-column-width: 16em;
-  -moz-column-gap: 5px;
-  -webkit-column-gap: 5px;
+    height: 600px;
+    
+    -moz-column-width: 16em;
+    -webkit-column-width: 16em;
+    -moz-column-gap: 5px;
+    -webkit-column-gap: 5px;
 }
 .portfolio ul li {
   display: inline-block;
@@ -815,21 +817,44 @@ h3 strong:after {
 }
 .experience h4:before
 {
-    top: 23px;
+    top: 25px;
+    left: 20px;
     background-position: -12px -433px;
 }
 .experience a   { color: #000000; }
+.experience .leftInfo { padding-top: 0px; }
+.experience .leftInfo .indication {
+    right: -15px;
+    top: 45px;
+}
+
 .experience .studyBox
 {
-    width: 38%;
     margin: 0px auto;
     text-align: left;
-    padding: 0px 10px 0px 8%;
-    border-bottom: 3px solid #3daeff;
+    padding: 25px 10px 25px 16%;
     position: relative;
     top: 60px;
 }
-.experience .studyBox label     { color: #3daeff; font-weight: 500; }
+.experience .rightInfo {
+    padding-top: 0px;
+}
+.experience .studyBox label  { 
+    color: #3daeff; 
+    font-weight: 500; 
+    padding-left: 13px;
+    position: relative;
+    font-size: 15px;
+}
+.experience .studyBox label:before {
+    content: "|";
+    color: #d3d3d3;
+    font-size: 20px;
+    padding-right: 7px;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+}
 
 
 /*###############  Interest  ##############*/
@@ -1007,7 +1032,7 @@ footer .active .footerInfo
   text-align: center;
   vertical-align: middle;
   margin-right: 12px;    
-  border: 1px solid #2c95d0;  
+  border: 1.5px solid rgba(255, 255, 255, 0.7);  
 }
 .footerInfo .getInTouch a:before {
   content: attr(title);
