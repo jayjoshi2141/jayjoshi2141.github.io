@@ -97,50 +97,62 @@
                  if(($(window).scrollTop() > $('.skills').offset().top-200) && !$('.skills').hasClass('progressdone'))
                      {
                         $('#progressbar1').LineProgressbar({
-                             percentage: 60,
-                             fillBackgroundColor: '#118ef2',
+                             percentage: 40,
+                             fillBackgroundColor: '#d77b97',
                              radius: '5px'    
                            });
                          
                          $('#progressbar2').LineProgressbar({
-                             percentage: 90,
-                             fillBackgroundColor: 'rgb(62, 88, 230)',
+                             percentage: 60,
+                             fillBackgroundColor: '#76a0cc',
                              radius: '5px'    
                            });
 
                           $('#progressbar3').LineProgressbar({
-                             percentage: 20,
-                             fillBackgroundColor: '#119c8f',
+                             percentage: 50,
+                             fillBackgroundColor: '#ee8f80',
                              radius: '5px'    
                            });
 
                           $('#progressbar4').LineProgressbar({
-                             percentage: 90,
-                             fillBackgroundColor: '#fbba18',
+                             percentage: 50,
+                             fillBackgroundColor: '#cec582',
                              radius: '5px'    
                            });
 
                           $('#progressbar5').LineProgressbar({
-                             percentage: 35,
-                             fillBackgroundColor: '#ed423d',
+                             percentage: 75,
+                             fillBackgroundColor: '#66c2a8',
                              radius: '5px'    
                            });
 
                           $('#progressbar6').LineProgressbar({
                              percentage: 75,
-                             fillBackgroundColor: '#a844bb',
+                             fillBackgroundColor: '#bd91e5',
                              radius: '5px'    
                            });
                          
                          $('#progressbar7').LineProgressbar({
-                             percentage: 15,
-                             fillBackgroundColor: '#2dd066',
+                             percentage: 80,
+                             fillBackgroundColor: '#3aaab4',
                              radius: '5px'    
                            });
                          
                          $('#progressbar8').LineProgressbar({
-                             percentage: 20,
-                             fillBackgroundColor: '#07b7bd',
+                             percentage: 40,
+                             fillBackgroundColor: '#c48da8',
+                             radius: '5px'    
+                           });
+
+                           $('#progressbar9').LineProgressbar({
+                             percentage: 80,
+                             fillBackgroundColor: '#e568ca',
+                             radius: '5px'    
+                           });
+                         
+                         $('#progressbar10').LineProgressbar({
+                             percentage: 70,
+                             fillBackgroundColor: '#dda381',
                              radius: '5px'    
                            });
                          
@@ -151,13 +163,6 @@
                      }
                  
 
-                 /*##### section: Portfolio #####*/
-                 if($(window).scrollTop() > $('#portfolio').offset().top-250)
-                     {
-                         $(".thumbs").addClass("activeGallery");
-                     }
-                         
-                 
                  
                  /*##### section: education #####*/
                  if($(window).scrollTop() > $('#education').offset().top-200 )
@@ -277,7 +282,7 @@
       <p>I Design crystal clear web and User Interfaces with the Digital experience. <br />
 It is something that i enjoy the design to be involved in it.</p>
         <div class="downloadCV">
-          <a href="https://1drv.ms/b/s!Ali4OqlP3XNAgb1KhXbRIhVWcCm6IQ" target="_blank">Download CV</a>
+          <a href="https://1drv.ms/b/s!Ali4OqlP3XNAgb9pYzXXHZZmgGTQUA" target="_blank">Download CV</a>
         </div>  <!-- downloadCV ends -->
     </div> <!-- introInfo ends -->
     <div class="clr"></div>
@@ -293,7 +298,7 @@ It is something that i enjoy the design to be involved in it.</p>
 
 <section class="services" id="services">
   <section class="wrapper">
-    <h3>What I do <strong>My Services</strong></h3>
+    <div class="sectionTitle"> <h3>What I do <strong>Services</strong></h3> </div>  <!-- sectionTitle ends -->
     <div class="servicesInfo">
       <ul>
         <li class="clearHtml">
@@ -371,57 +376,69 @@ It is something that i enjoy the design to be involved in it.</p>
 
 <section class="skills">
   <section class="wrapper">
-    <h3>what i have <strong>My Skills</strong></h3>
+    <div class="sectionTitle"> <h3>what i have <strong>Skills</strong></h3> </div>
     <div class="skillsInfo">
         <ul>
         <li>
-            <label>Photoshop</label>
+            <label>Design Thinking</label>
             <div class="progressBar" id="progressbar1"></div>
             <div class="clr"></div>
         </li>    <!-- skillSet ends -->  
 
         <li>
-            <label>HTML5</label>
+            <label>Photoshop</label>
             <div class="progressBar" id="progressbar2"></div>
             <div class="clr"></div>
-        </li>    <!-- skillSet ends -->  
+        </li>    <!-- skillSet ends -->
 
         <li>
-            <label>Illustrator</label>
+            <label>UI Design</label>
             <div class="progressBar" id="progressbar3"></div>
             <div class="clr"></div>
         </li>    <!-- skillSet ends -->  
 
         <li>
-            <label>CSS3</label>
+            <label>Illustrator</label>
             <div class="progressBar" id="progressbar4"></div>
             <div class="clr"></div>
-        </li>    <!-- skillSet ends -->  
+        </li>    <!-- skillSet ends -->
 
         <li>
-            <label>Corel Draw</label>
+            <label>HTML5</label>
             <div class="progressBar" id="progressbar5"></div>
             <div class="clr"></div>
         </li>    <!-- skillSet ends -->  
 
         <li>
-            <label>SCSS</label>
+            <label>Invision</label>
             <div class="progressBar" id="progressbar6"></div>
             <div class="clr"></div>
         </li>    <!-- skillSet ends -->
-        
+
         <li>
-            <label>Adobe XD</label>
+            <label>CSS3</label>
             <div class="progressBar" id="progressbar7"></div>
             <div class="clr"></div>
-        </li>    <!-- skillSet ends -->
-            
+        </li>    <!-- skillSet ends -->  
+
         <li>
-            <label>jQuery</label>
+            <label>Experience Design</label>
             <div class="progressBar" id="progressbar8"></div>
             <div class="clr"></div>
-        </li>    <!-- skillSet ends -->    
+        </li>    <!-- skillSet ends --> 
 
+        <li>
+            <label>SASS</label>
+            <div class="progressBar" id="progressbar9"></div>
+            <div class="clr"></div>
+        </li>    <!-- skillSet ends -->  
+
+        <li>
+            <label>Corel Draw</label>
+            <div class="progressBar" id="progressbar10"></div>
+            <div class="clr"></div>
+        </li>    <!-- skillSet ends -->
+          
         <div class="clr"></div>
         </ul>
     </div>  <!-- skillsInfo ends -->
@@ -434,81 +451,56 @@ It is something that i enjoy the design to be involved in it.</p>
 #################  Portfolio  ##################
 #############################################-->
 
-<section class="portfolio" id="portfolio">
-  <h3>Some of My Work <strong> My Portfolio </strong> </h3>
+<section class="portfolio" id="">
+  <div class="sectionTitle"><h3>Some of My Work <strong> Portfolio </strong> </h3></div>
   <section class="wrapper">
     <div class="thumbs">
 
-        <ul id="lightgallery" class="list-unstyled row">
-
-          <li class="col-xs-6 col-sm-4 col-md-3 gallery1" data-src="images/gallery1_large.png">
-              <a href="">
-                  <img class="img-responsive" src="images/gallery1.png" />
-              </a>
-              <div class="overlay"> <label>App Banner</label> </div> <!-- overlay ends --> 
+        <ul id="lightgallery" class="">
+          <li class="col-xs-6 col-sm-4 col-md-3" data-src="images/gallery1_large.png">
+              <a href=""> <img src="images/gallery1.png" alt=""> </a>
+              <div class="overlay"> <label>Web Design</label> </div> <!-- overlay ends --> 
           </li>
 
-          <li class="gallery2 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery2_large.png">
-             <a href="">
-                 <img class="img-responsive" src="images/gallery2.png" />
-             </a>
-             <div class="overlay"> <label> User Interface </label> </div> <!-- overlay ends -->   
-
+          <li class="col-xs-6 col-sm-4 col-md-3" data-src="images/gallery2_large.png">
+            <a href=""> <img src="images/gallery2.png" alt=""> </a>
+            <div class="overlay"> <label>App Design</label> </div> <!-- overlay ends --> 
           </li>
 
-          <li class="gallery3 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery3_large.png">
-             <a href="">
-                 <img class="img-responsive" src="images/gallery3.png" />
-             </a>
-             <div class="overlay"> <label> Login UI </label> </div> <!-- overlay ends -->  
-
+          <li class="col-xs-6 col-sm-4 col-md-3" data-src="images/gallery3_large.png">
+            <a href=""> <img src="images/gallery3.png" alt=""> </a>
+            <div class="overlay"> <label>Web Design</label> </div> <!-- overlay ends --> 
           </li>
 
-          <li class="gallery4 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery4_large.png">
-             <a href="">
-                 <img class="img-responsive" src="images/gallery4.png" />
-             </a>
-             <div class="overlay"> <label> Logo Design </label> </div> <!-- overlay ends -->  
-
+          <li class="col-xs-6 col-sm-4 col-md-3" data-src="images/gallery4_large.png">
+            <a href=""> <img src="images/gallery4.png" alt=""> </a>
+            <div class="overlay"> <label>Splash</label> </div> <!-- overlay ends --> 
+          </li>     
+          
+          <li class="col-xs-6 col-sm-4 col-md-3" data-src="images/gallery5_large.png">
+            <a href=""> <img src="images/gallery5.png" alt=""> </a>
+            <div class="overlay"> <label>App Design</label> </div> <!-- overlay ends --> 
           </li>
 
-          <li class="gallery5 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery5_large.jpg">
-             <a href="">
-                <img class="img-responsive" src="images/gallery5.png" />
-             </a>
-             <div class="overlay"> <label> Business Card </label> </div> <!-- overlay ends -->  
+          <li class="col-xs-6 col-sm-4 col-md-3" data-src="images/gallery6_large.png">
+            <a href=""> <img src="images/gallery6.png" alt=""> </a>
+            <div class="overlay"> <label>3d Manipulation</label> </div> <!-- overlay ends --> 
           </li>
 
-          <li class="gallery6 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery6_large.png">
-             <a href="">
-                <img class="img-responsive" src="images/gallery6.png" />
-             </a>
-            <div class="overlay"> <label> Business Card </label> </div> <!-- overlay ends -->  
+          <li class="col-xs-6 col-sm-4 col-md-3" data-src="images/gallery7_large.png">
+            <a href=""> <img src="images/gallery7.png" alt=""> </a>
+            <div class="overlay"> <label>Login UI</label> </div> <!-- overlay ends --> 
           </li>
 
-          <li class="gallery7 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery7_large.png">
-             <a href="">
-                 <img class="img-responsive" src="images/gallery7.png" />
-             </a>
-             <div class="overlay"> <label> Banner </label> </div> <!-- overlay ends -->  
-          </li>
-
-          <li class="gallery8 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery8_large.png">
-             <a href="">
-                 <img class="img-responsive" src="images/gallery8.png" />
-             </a>
-             <div class="overlay"> <label> Infographic </label> </div> <!-- overlay ends -->  
-          </li>
-            
-          <li class="gallery9 col-xs-6 col-sm-4 col-md-3" data-src="images/gallery9_large.png">
-             <a href="">
-                 <img class="img-responsive" src="images/gallery9.png" />
-             </a>
-             <div class="overlay"> <label> Splash screen </label> </div> <!-- overlay ends -->  
-          </li>
-        </ul>          
-        <div class="clr"></div>
-      </div>  <!-- thumbs ends -->
+          <li class="col-xs-6 col-sm-4 col-md-3" data-src="images/gallery8_large.png">
+            <a href=""> <img src="images/gallery8.png" alt=""> </a>
+            <div class="overlay"> <label>Web Design</label> </div> <!-- overlay ends --> 
+          </li> 
+      </ul>          
+      <div class="clr"></div>
+    
+      <a class="behanceLink" target="_blank" href="https://www.behance.net/Jaymscit154260">View On Behance</a>
+    </div>  <!-- thumbs ends -->
   </section> <!-- wrapper ends -->
 </section> <!-- portfolio ends -->
 
@@ -518,7 +510,7 @@ It is something that i enjoy the design to be involved in it.</p>
 #############################################-->
 
 <section class="education" id="education">
-  <h3>About My Study<strong>My Education</strong></h3>
+  <div class="sectionTitle"> <h3>About My Study<strong>Education</strong></h3> </div>
   <section class="wrapper">
 
       <div class="leftInfo">
@@ -568,8 +560,7 @@ It is something that i enjoy the design to be involved in it.</p>
     
 <section class="experience education" id="experience"> 
     <section class="wrapper">    
-        <h3>Since I Work <strong>My Experience</strong></h3>
-
+      <div class="sectionTitle"> <h3>Since I Work <strong>Experience</strong></h3> </div>
         <div class="leftInfo">
           <div class="studyBox">
             <span class="indication"></span>
@@ -601,7 +592,7 @@ It is something that i enjoy the design to be involved in it.</p>
 
 <section class="interest" id="interest">
   <section class="wrapper">
-    <h3>About my hobbies <strong>My Interest</strong></h3>
+    <div class="sectionTitle"> <h3>About my hobbies <strong>Interest</strong></h3> </div>
     <div class="interestInfo">
       <ul>
         <li class="travelling odd">
@@ -673,7 +664,7 @@ It is something that i enjoy the design to be involved in it.</p>
   </section> <!-- wrapper ends -->
 </div>  <!-- footerMain ends -->    
   
-<label class="copyright">Design & Developed by Jay Joshi &copy; 2018 <a href="">jayjoshi.in</a></label>
+<label class="copyright">Design & Developed by Jay Joshi &copy; 2019 <a href="http://jayjoshi.in">jayjoshi.in</a></label>
 
 </footer>  <!-- footerMain ends -->
 
