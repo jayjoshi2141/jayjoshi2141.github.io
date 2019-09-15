@@ -171,53 +171,65 @@ var svgIcon = function(){
 
 $(document).ready(function(){
     if($(window).width() <= 767) {
-    $('#progressbar1').LineProgressbar({
-         percentage: 35,
-         fillBackgroundColor: '#118ef2',
-         radius: '5px'    
-       });
+        $('#progressbar1').LineProgressbar({
+            percentage: 20,
+            fillBackgroundColor: '#d77b97',
+            radius: '5px'    
+          });
+        
+        $('#progressbar2').LineProgressbar({
+            percentage: 20,
+            fillBackgroundColor: '#76a0cc',
+            radius: '5px'    
+          });
 
-     $('#progressbar2').LineProgressbar({
-         percentage: 85,
-         fillBackgroundColor: 'rgb(62, 88, 230)',
-         radius: '5px'    
-       });
+         $('#progressbar3').LineProgressbar({
+            percentage: 40,
+            fillBackgroundColor: '#ee8f80',
+            radius: '5px'    
+          });
 
-      $('#progressbar3').LineProgressbar({
-         percentage: 20,
-         fillBackgroundColor: '#119c8f',
-         radius: '5px'    
-       });
+         $('#progressbar4').LineProgressbar({
+            percentage: 15,
+            fillBackgroundColor: '#c8bb57',
+            radius: '5px'    
+          });
 
-      $('#progressbar4').LineProgressbar({
-         percentage: 90,
-         fillBackgroundColor: '#fbba18',
-         radius: '5px'    
-       });
+         $('#progressbar5').LineProgressbar({
+            percentage: 75,
+            fillBackgroundColor: '#66c2a8',
+            radius: '5px'    
+          });
 
-      $('#progressbar5').LineProgressbar({
-         percentage: 25,
-         fillBackgroundColor: '#ed423d',
-         radius: '5px'    
-       });
+         $('#progressbar6').LineProgressbar({
+            percentage: 50,
+            fillBackgroundColor: '#bd91e5',
+            radius: '5px'    
+          });
+        
+        $('#progressbar7').LineProgressbar({
+            percentage: 80,
+            fillBackgroundColor: '#3aaab4',
+            radius: '5px'    
+          });
+        
+        $('#progressbar8').LineProgressbar({
+            percentage: 20,
+            fillBackgroundColor: '#c48da8',
+            radius: '5px'    
+          });
 
-      $('#progressbar6').LineProgressbar({
-         percentage: 70,
-         fillBackgroundColor: '#a844bb',
-         radius: '5px'    
-       });
-
-     $('#progressbar7').LineProgressbar({
-         percentage: 15,
-         fillBackgroundColor: '#2dd066',
-         radius: '5px'    
-       });
-
-     $('#progressbar8').LineProgressbar({
-         percentage: 40,
-         fillBackgroundColor: '#07b7bd',
-         radius: '5px'    
-       });
+          $('#progressbar9').LineProgressbar({
+            percentage: 30,
+            fillBackgroundColor: '#e568ca',
+            radius: '5px'    
+          });
+        
+        $('#progressbar10').LineProgressbar({
+            percentage: 25,
+            fillBackgroundColor: '#dda381',
+            radius: '5px'    
+          });
         $('.skills').addClass('progressdone');
     }
     svgIcon();
